@@ -149,3 +149,6 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# jsonnet
+alias fcj='git status -s | grep -e jsonnet -e libsonnet | cut -c4- | xargs jsonnet fmt -i'
